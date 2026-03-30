@@ -8,7 +8,7 @@
 
 ## 📡 What is NETCIPHER?
 
-NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines powerful deauthentication attacks, evil twin captive portals, hidden SSID recovery, and real-time monitoring — all controllable via OLED display + buttons.
+NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines powerful pentesting attacks — all controllable via OLED display + buttons and Web Interface.
 
 ---
 
@@ -47,7 +47,7 @@ NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines power
 | **Web Interface** | Control all actions with web interface |
 | **OLED Display** | 128x64 (SH1106) — real-time status |
 | **Physical Buttons** | Full control without phone |
-| **Digital Clock** | Real-time clock on OLED |
+| **Digital Clock** | Real-time clock on OLED(only if any device is connected to softAP) |
 
 ---
 
@@ -55,11 +55,11 @@ NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines power
 
 | Component | Recommended |
 |:---|:---|
-| **Microcontroller** | ESP32 (WROOM, WROVER, S3) |
-| **Display** | OLED 128x64 (SSD1306 / SH1106) |
+| **Microcontroller** | ESP32 DevKitC |
+| **Display** | OLED 128x64 SH1106 |
 | **Buttons** | 4x tactile switches |
 | **LED** | Built-in or external |
-| **Power** | 1000mAh Li-Po / USB |
+| **Power** | Battery / USB |
 
 ### Pin Configuration
 
@@ -70,7 +70,7 @@ NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines power
 | **Button DOWN** | GPIO 32 |
 | **Button OK** | GPIO 27 |
 | **Button BACK** | GPIO 25 |
-| **LED** | GPIO 2 |
+| **LED** | GPIO 2/Built in |
 
 ---
 
@@ -79,7 +79,7 @@ NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines power
 1. **Download** the latest firmware from Releases
 2. **Flash** the `.bin` file to your ESP32 using ESP32 Flash Download Tool or esptool
 3. **Connect** OLED and buttons as per pin configuration
-4. **Power on** and navigate using the buttons
+5. **Power on** and navigate using the buttons or connect to NETCIPHER wifi and use the web interface
 
 ---
 
