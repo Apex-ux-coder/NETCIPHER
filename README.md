@@ -22,6 +22,7 @@ NETCIPHER is a **professional-grade Wi-Fi security testing framework** for ESP32
 | **Multi-Target Deauth** | Attack multiple APs simultaneously |
 | **Deauth Flood** | High-speed packet bursts (500+ packets/sec) |
 | **STA Deauth** | Target specific clients |
+| **Reactive Deauth** | Auto-deauth connecting clients to selected AP |
 
 ### 🎭 Spoofing & Capture
 
@@ -43,16 +44,10 @@ NETCIPHER is a **professional-grade Wi-Fi security testing framework** for ESP32
 
 | Interface | Description |
 |:---|:---|
+| **Web Interface** | Control all actions with web interface |
 | **OLED Display** | 128x64 (SH1106) — real-time status |
 | **Physical Buttons** | Full control without phone |
 | **Digital Clock** | Real-time clock on OLED |
-
-### ⚙️ Advanced
-
-| Feature | Description |
-|:---|:---|
-| **Reactive Deauth** | Auto-deauth connecting clients |
-| **Deep Sleep** | Ultra-low power mode |
 
 ---
 
