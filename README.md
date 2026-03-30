@@ -8,7 +8,7 @@
 
 ## 📡 What is NETCIPHER?
 
-NETCIPHER is a **professional-grade Wi-Fi security testing framework** for ESP32. It combines powerful deauthentication attacks, evil twin captive portals, hidden SSID recovery, and real-time monitoring — all controllable via OLED display + buttons.
+NETCIPHER is a **Wi-Fi security testing framework** for ESP32. It combines powerful deauthentication attacks, evil twin captive portals, hidden SSID recovery, and real-time monitoring — all controllable via OLED display + buttons.
 
 ---
 
