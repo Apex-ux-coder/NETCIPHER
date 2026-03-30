@@ -1,2 +1,116 @@
-# NETCIPHER
-NETCIPHER — Professional Wi-Fi security testing framework for ESP32.
+# 🔐 NETCIPHER
+
+### *ESP32 Wi-Fi Security Testing Framework*
+ 
+**Platform:** ESP32  
+
+---
+
+## 📡 What is NETCIPHER?
+
+NETCIPHER is a **professional-grade Wi-Fi security testing framework** for ESP32. It combines powerful deauthentication attacks, evil twin captive portals, hidden SSID recovery, and real-time monitoring — all controllable via OLED display + buttons.
+
+---
+
+## ✨ Features
+
+### 🔥 Core Attacks
+
+| Attack | Description |
+|:---|:---|
+| **Deauth Attack** | Force disconnect clients from Wi-Fi networks |
+| **Multi-Target Deauth** | Attack multiple APs simultaneously |
+| **Deauth Flood** | High-speed packet bursts (500+ packets/sec) |
+| **STA Deauth** | Target specific clients |
+
+### 🎭 Spoofing & Capture
+
+| Attack | Description |
+|:---|:---|
+| **Evil Twin** | Clone any network, capture passwords with captive portal |
+| **Hidden SSID Recovery** | Force hidden networks to reveal their SSID themselves |
+| **Beacon Spam** | Flood with fake SSIDs (Random + Clone modes) |
+
+### 📊 Monitoring & Logging
+
+| Feature | Description |
+|:---|:---|
+| **Deauth Detector** | Detect deauth attacks in your area |
+| **Station Scanner** | Discover clients connected to selected APs |
+| **Password Logs** | Persistent storage with verification status |
+
+### 🖥️ Interface
+
+| Interface | Description |
+|:---|:---|
+| **OLED Display** | 128x64 (SH1106) — real-time status |
+| **Physical Buttons** | Full control without phone |
+| **Digital Clock** | Real-time clock on OLED |
+
+### ⚙️ Advanced
+
+| Feature | Description |
+|:---|:---|
+| **Reactive Deauth** | Auto-deauth connecting clients |
+| **Deep Sleep** | Ultra-low power mode |
+
+---
+
+## 📦 Hardware Requirements
+
+| Component | Recommended |
+|:---|:---|
+| **Microcontroller** | ESP32 (WROOM, WROVER, S3) |
+| **Display** | OLED 128x64 (SSD1306 / SH1106) |
+| **Buttons** | 4x tactile switches |
+| **LED** | Built-in or external |
+| **Power** | 1000mAh Li-Po / USB |
+
+### Pin Configuration
+
+| Component | ESP32 Pins |
+|:---|:---|
+| **OLED (I2C)** | SDA=21, SCL=22 |
+| **Button UP** | GPIO 26 |
+| **Button DOWN** | GPIO 32 |
+| **Button OK** | GPIO 33 |
+| **Button BACK** | GPIO 25 |
+| **LED** | GPIO 2 |
+
+---
+
+## 🚀 Getting Started
+
+1. **Download** the latest firmware from Releases
+2. **Flash** the `.bin` file to your ESP32 using ESP32 Flash Download Tool or esptool
+3. **Connect** OLED and buttons as per pin configuration
+4. **Power on** and navigate using the buttons
+
+---
+
+## 🎮 Controls
+
+| Button | Action |
+|:---|:---|
+| **UP / DOWN** | Navigate menus |
+| **OK** | Select / Confirm |
+| **BACK** | Return / Exit |
+
+---
+
+## ⚠️ Legal Disclaimer
+
+> **NETCIPHER is for educational and authorized security testing purposes only.**
+>
+> - Only test networks you own or have written permission to test
+> - Unauthorized use may violate local, state, and federal laws
+> - The developer assumes no liability for misuse
+
+---
+
+## 🙏 Acknowledgments
+
+- **[Spacehuhn](https://github.com/spacehuhn)** — For the original ESP8266 Deauther that inspired this project
+- **ESP32 Community** — For continuous support and inspiration
+
+---
